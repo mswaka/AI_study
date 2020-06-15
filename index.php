@@ -30,8 +30,8 @@ if($m == 'show'){
   echo "<img src='$file' width='300'><br>";
 
   $f = basename($file);
-  echo "<a href='index.php?src=$src&$m=ok&f=$f'>[OK]</a> ---";
-  echo "<a href='index.php?src=$src&$m=ng&f=$f'>[NG]</a>";
+  echo "<a href='index.php?src=$src&m=ok&f=$f'>[OK]</a> ---";
+  echo "<a href='index.php?src=$src&m=ng&f=$f'>[NG]</a>";
 
 } else if ($m == 'ok' || $m == 'ng') {
   $f = empty($_GET['f']) ? '' : $_GET['f'];
